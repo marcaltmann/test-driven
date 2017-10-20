@@ -41,6 +41,13 @@ Date.prototype.strftime = (function() {
       return date.getFullYear();
     },
 
+    j: function(date) {
+      var jan1 = new Date(date.getFullYear(), 0, 1);
+      var diff = date.getTime() - jan1.getTime();
+
+      return Math.ceil(diff / 60 * 60 * 24 * 1000);
+    },
+
     // Format shorthands
     F: '%Y-%m-%d',
     D: '%m/%d/%y',
