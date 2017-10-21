@@ -1,0 +1,4 @@
+alias starttestserver='java -jar $JSTESTDRIVER_HOME/JsTestDriver-1.2.1.jar --port 4224'
+alias runtests='java -jar $JSTESTDRIVER_HOME/JsTestDriver-1.2.1.jar --tests all'
+alias runtestsreset='java -jar $JSTESTDRIVER_HOME/JsTestDriver-1.2.1.jar --tests all --reset'
+
